@@ -7,16 +7,16 @@ public class Main {
         double doubleTotal = 0.0;
         BigDecimal bigDecimalTotal = new BigDecimal("0.00");
 
-        BigDecimal amount = new BigDecimal("0.10");
+        BigDecimal amount = new BigDecimal("19.99");
 
-        for (int i = 1; i <= 10; i++) {
-            floatTotal += 0.10f;
-            doubleTotal += 0.10;
+        for (int i = 1; i <= 1000; i++) {
+            floatTotal += 19.99f;
+            doubleTotal += 19.99;
             bigDecimalTotal = bigDecimalTotal.add(amount);
-            System.out.println("Float: " + floatTotal);
-            System.out.println("Double: " + doubleTotal);
-            System.out.println("Big Decimal: " + bigDecimalTotal);
         }
+        System.out.println("Float: " + floatTotal);
+        System.out.println("Double: " + doubleTotal);
+        System.out.println("Big Decimal: " + bigDecimalTotal);
 
     }
 }
